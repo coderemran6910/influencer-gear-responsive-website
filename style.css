@@ -1,0 +1,133 @@
+/* Shared css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+:root {
+    --primary:#E02C6D;
+    --header: #3A3A3A;
+    --white: #FFF;
+    --gray:#787885;
+  }
+
+
+
+
+
+
+/* Header related css */
+header{
+    width: auto;
+    height: 100vh;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+}
+.logo{
+    color: var(--header);
+    font-size: 1.2rem;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.menu ul li a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+}
+
+/* Banner related css */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.banner-text, .banner-image{
+    max-width: 50%;
+}
+.banner-text h1{
+    font-size: 3.2rem;
+    color: var(--header);
+    margin-bottom: 20px;
+    margin-top: .7rem;
+}
+.banner-text p{
+    font-size: 1rem;
+    margin-top: .8rem;
+}
+.btn-paimary{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px; 
+    border: 0;
+    margin-top: 1.5rem;
+
+}
+.banner-image{
+    background-image: url(./images/bac);
+}
+.banner-image  img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive css for Mobile divice */
+@media screen and (max-width: 578px) {
+    .container{
+        width: 500px;
+    }
+    .banner {
+         flex-direction: column-reverse;
+         text-align: center;
+    
+    }
+    .header-container{
+        text-align: center;
+       flex-direction: column;
+        
+    }
+    .menu ul li a{
+        font-size:1rem ;
+    }
+    .banner-text h1{
+        font-size:1.5rem ;
+    }
+    .banner-text, .banner-image{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
